@@ -1,6 +1,6 @@
 {
   "name": "OpenVPN Monitor",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "slug": "openvpn-monitor",
   "description": "OpenVPN Monitor is a web-based utility that displays the status of OpenVPN servers. It includes information such as the usernames/hostnames connected, remote and VPN IP addresses, approximate locations (using GeoIP), traffic consumption and more.",
   "url": "https://github.com/RuimteDraak/hassio-openvpn-monitor",
