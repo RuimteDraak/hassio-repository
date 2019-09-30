@@ -1,0 +1,48 @@
+{
+  "name": "OpenVPN Monitor",
+  "version": "0.0.10",
+  "slug": "openvpn-monitor",
+  "description": "OpenVPN Monitor is a web-based utility that displays the status of OpenVPN servers. It includes information such as the usernames/hostnames connected, remote and VPN IP addresses, approximate locations (using GeoIP), traffic consumption and more.",
+  "url": "https://github.com/RuimteDraak/hassio-openvpn-monitor",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "system",
+  "boot": "auto",
+  "ingress": true,
+  "panel_icon": "mdi:monitor-dashboard",
+  "homeassistant_api": true,
+  "options": {
+	"site": "Example",
+	"maps": true,
+	"datetime_format":"%d/%m/%Y %H:%M:%S",
+	"vpns": [
+		{
+			"configName": "VPN1",
+			"host": "127.0.0.1",
+			"port": 5555,
+			"name": "Staff VPN",
+			"show_disconnect": false
+		}
+	]
+  },
+  "schema": {
+	"site": "str",
+	"maps": "bool",
+	"datetime_format": "str",
+	"vpns": [
+		{
+			"configName": "str",
+			"host": "str",
+			"port": "port",
+			"name": "str",
+			"show_disconnect": "bool"
+		}
+	]
+  },
+  "ports": {
+	"80/tcp": null
+	},
+  "ports_description": {
+    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
+  },
+  "image": "ruimtedraak/hassio-openvpn-monitor-{arch}"
+}
