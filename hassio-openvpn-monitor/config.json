@@ -1,11 +1,11 @@
 {
   "name": "OpenVPN Monitor",
-  "version": "0.0.19",
+  "version": "0.1.0",
   "slug": "openvpn-monitor",
   "description": "OpenVPN Monitor is a web-based utility that displays the status of OpenVPN servers. It includes information such as the usernames/hostnames connected, remote and VPN IP addresses, approximate locations (using GeoIP), traffic consumption and more.",
   "url": "https://github.com/RuimteDraak/hassio-openvpn-monitor",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "startup": "system",
+  "startup": "application",
   "boot": "auto",
   "ingress": true,
   "panel_icon": "mdi:monitor-dashboard",
