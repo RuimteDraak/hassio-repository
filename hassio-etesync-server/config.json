@@ -1,13 +1,16 @@
 {
   "name": "Etesync Server",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "slug": "etesync-server",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-server",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
-  "ingress": false,
+  "ingress": true,
+  "ingress_port": 80,
+  "ingress_entry": "/admin",
+  "panel_admin": true,
   "panel_icon": "mdi:calendar-today",
   "homeassistant_api": false,
   "options": {
