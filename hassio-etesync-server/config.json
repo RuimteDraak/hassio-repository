@@ -1,12 +1,15 @@
 {
   "name": "Etesync Server",
-  "version": "0.0.60",
+  "version": "0.0.61",
   "slug": "etesync-server",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-server",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
+  "map": [
+    "ssl"
+  ],
   "ingress": false,
   "ingress_port": 80,
   "ingress_entry": "admin",
