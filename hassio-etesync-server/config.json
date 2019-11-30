@@ -11,7 +11,7 @@
     "ssl"
   ],
   "ingress": true,
-  "ingress_port": 8080,
+  "ingress_port": 8099,
   "ingress_entry": "admin",
   "panel_admin": true,
   "panel_icon": "mdi:calendar-today",
