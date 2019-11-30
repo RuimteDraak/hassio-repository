@@ -1,6 +1,6 @@
 {
   "name": "Etesync Server",
-  "version": "0.0.62",
+  "version": "0.0.63",
   "slug": "etesync-server",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-server",
@@ -10,8 +10,8 @@
   "map": [
     "ssl"
   ],
-  "ingress": false,
-  "ingress_port": 80,
+  "ingress": true,
+  "ingress_port": 8080,
   "ingress_entry": "admin",
   "panel_admin": true,
   "panel_icon": "mdi:calendar-today",
@@ -29,7 +29,7 @@
     "allowed_host": "str"
   },
   "ports": {
-	"80/tcp": 8800
+	"8080/tcp": 8080
 	},
   "ports_description": {
     "80/tcp": "API port"
