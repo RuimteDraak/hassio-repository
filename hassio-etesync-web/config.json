@@ -1,6 +1,6 @@
 {
   "name": "Etesync Web",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "slug": "etesync-web",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks. This addon should be used in combination with an etesync server.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-web",
@@ -10,7 +10,7 @@
   "map": [
     "ssl"
   ],
-  "ingress": true,
+  "ingress": false,
   "ingress_port": 8099,
   "panel_admin": true,
   "panel_icon": "mdi:calendar-today",
@@ -26,10 +26,10 @@
     "keyfile": "str"
   },
   "ports": {
-	"8080/tcp": 8080
+	"80/tcp": 8081
 	},
   "ports_description": {
-    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
+    "80/tcp": "Web interface"
   },
   "image": "ruimtedraak/hassio-etesync-web-{arch}"
 }
