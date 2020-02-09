@@ -1,6 +1,6 @@
 {
   "name": "Etesync Server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "slug": "etesync-server",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-server",
