@@ -1,0 +1,23 @@
+{
+  "name": "DigitalOcean Dynamic DNS",
+  "version": "0.1.0",
+  "slug": "digitalocean-ddns",
+  "description": "Create a dynamic dns solution using the DigitalOcean API",
+  "url": "https://github.com/RuimteDraak/hassio-etesync-server",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "map": [],
+  "homeassistant_api": false,
+  "options": {
+    "api_token": "",
+    "domain_name": "",
+    "domain_record_name": ""
+  },
+  "schema": {
+    "api_token": "str",
+    "domain_name": "str",
+    "domain_record_name": "str"
+  },
+  "image": "ruimtedraak/home-assistant-addon-digitalocean-ddns-{arch}"
+}
