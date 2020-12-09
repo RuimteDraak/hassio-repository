@@ -1,0 +1,36 @@
+{
+  "name": "Etebase",
+  "version": "0.0.1",
+  "slug": "etebase",
+  "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars, tasks and more.",
+  "url": "https://github.com/RuimteDraak/home-assistant-addon-etebase-server",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "map": [
+    "ssl"
+  ],
+  "ingress": false,
+  "ingress_port": 8099,
+  "ingress_entry": "/admin",
+  "panel_admin": false,
+  "panel_icon": "mdi:calendar-today",
+  "homeassistant_api": true,
+  "options": {
+    "ssl": true,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem"
+  },
+  "schema": {
+    "ssl": "bool",
+    "certfile": "str",
+    "keyfile": "str"
+  },
+  "ports": {
+	"80/tcp": 8080
+	},
+  "ports_description": {
+    "80/tcp": "EteBase server API. Required for other etebase clients to connect to."
+  },
+  "image": "ruimtedraak/home-assistant-addon-etebase-server-{arch}"
+}
