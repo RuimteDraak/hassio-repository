@@ -1,6 +1,6 @@
 {
   "name": "Etebase",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "slug": "etebase",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars, tasks and more.",
   "url": "https://github.com/RuimteDraak/home-assistant-addon-etebase-server",
@@ -19,12 +19,14 @@
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
+    "keyfile": "privkey.pem",
+    "backups": 3
   },
   "schema": {
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str"
+    "keyfile": "str",
+    "backups": "int"
   },
   "ports": {
 	"80/tcp": 8080
