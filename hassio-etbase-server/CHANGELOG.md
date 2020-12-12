@@ -1,3 +1,6 @@
+Version 0.0.4
+- Some extra logging when starting services
+
 Version 0.0.3
 - Create backups
 

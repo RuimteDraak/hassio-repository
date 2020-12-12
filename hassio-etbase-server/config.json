@@ -1,6 +1,6 @@
 {
   "name": "Etebase",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "slug": "etebase",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars, tasks and more.",
   "url": "https://github.com/RuimteDraak/home-assistant-addon-etebase-server",
