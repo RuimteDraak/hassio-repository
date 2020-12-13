@@ -1,3 +1,6 @@
+Version 0.0.5
+- (Testing) Add ingress support
+
 Version 0.0.4
 - Some extra logging when starting services
 
