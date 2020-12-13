@@ -1,14 +1,3 @@
-Version 0.0.5
-- (Testing) Add ingress support
-
-Version 0.0.4
-- Some extra logging when starting services
-
-Version 0.0.3
-- Create backups
-
-Version 0.0.2
-- Fixed an issue with nginx port
-
-Version 0.0.1
-- Initial basic setup
+Version 0.1.0
+- Improve documentation
+- Remove ingress, as it does not work as intended
