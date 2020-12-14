@@ -1,5 +1,5 @@
 {
-  "name": "Etesync Server",
+  "name": "Etesync Server (DEPRECATED)",
   "version": "0.1.6",
   "slug": "etesync-server",
   "description": "DEPRECATED: Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks.",
