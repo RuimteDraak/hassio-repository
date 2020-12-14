@@ -1,4 +1,4 @@
-# hassio-etesync-server
+# **DEPRECATED** hassio-etesync-server
 
 **DEPRECATED**
 EteSync has updated to EteBase, version 2 of the EteSync server that allows for a lot more flexibility in the future. Unfortunealty the new version is not compatible with this old version. If you want to continue using EteSync as an home assistant addon, take a look at [the new EteBase addon in this repository](https://github.com/RuimteDraak/hassio-repository). This addon will no longer recieve any updates. 
