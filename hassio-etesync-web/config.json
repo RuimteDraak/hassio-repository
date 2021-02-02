@@ -1,6 +1,6 @@
 {
   "name": "Etesync Web",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "slug": "etesync-web",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks. This addon should be used in combination with an etesync server.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-web",
@@ -18,12 +18,14 @@
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
+    "keyfile": "privkey.pem",
+    "api_path": "https://www.etesync.com/"
   },
   "schema": {
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str"
+    "keyfile": "str",
+    "api_path": "str"
   },
   "ports": {
 	"80/tcp": 8081
