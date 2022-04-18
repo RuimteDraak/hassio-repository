@@ -1,36 +1,37 @@
 {
-  "name": "Etebase",
-  "version": "2021.11.0",
-  "slug": "etebase",
-  "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars, tasks and more.",
-  "url": "https://github.com/RuimteDraak/home-assistant-addon-etebase-server",
+  "name": "Etesync Web",
+  "version": "2022.04.0",
+  "slug": "etesync-web",
+  "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks. This addon should be used in combination with an etesync server.",
+  "url": "https://github.com/RuimteDraak/hassio-etesync-web",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
   "map": [
     "ssl"
   ],
-  "ingress": false,
-  "panel_admin": true,
+  "ingress": true,
+  "ingress_port": 8099,
+  "panel_admin": false,
   "panel_icon": "mdi:calendar-today",
-  "homeassistant_api": true,
+  "homeassistant_api": false,
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
-    "backups": 3
+    "api_path": "https://www.etesync.com/"
   },
   "schema": {
     "ssl": "bool",
     "certfile": "str",
     "keyfile": "str",
-    "backups": "int"
+    "api_path": "str"
   },
   "ports": {
-	"80/tcp": 8080
+	"80/tcp": 8081
 	},
   "ports_description": {
-    "80/tcp": "EteBase server API. Required for other etebase clients to connect to."
+    "80/tcp": "Web interface. Not required when using ingess."
   },
-  "image": "ruimtedraak/home-assistant-addon-etebase-server-{arch}"
+  "image": "ruimtedraak/hassio-etesync-web-{arch}"
 }
