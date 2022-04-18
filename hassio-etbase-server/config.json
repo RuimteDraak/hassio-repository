@@ -1,6 +1,6 @@
 {
   "name": "Etesync Web",
-  "version": "2022.04.0",
+  "version": "2022.04.1",
   "slug": "etesync-web",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars and tasks. This addon should be used in combination with an etesync server.",
   "url": "https://github.com/RuimteDraak/hassio-etesync-web",
@@ -14,7 +14,7 @@
   "ingress_port": 8099,
   "panel_admin": false,
   "panel_icon": "mdi:calendar-today",
-  "homeassistant_api": false,
+  "homeassistant_api": true,
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
