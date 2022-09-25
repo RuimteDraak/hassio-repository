@@ -1,6 +1,6 @@
 {
   "name": "Etebase",
-  "version": "2022.04.0",
+  "version": "2022.09.0",
   "slug": "etebase",
   "description": "Secure, end-to-end encrypted, and privacy respecting sync for your contacts, calendars, tasks and more.",
   "url": "https://github.com/RuimteDraak/home-assistant-addon-etebase-server",
@@ -10,28 +10,28 @@
   "map": [
     "ssl"
   ],
-  "ingress": true,
-  "ingress_port": 8099,
-  "panel_admin": false,
+  "ingress": false,
+  "init": false,
+  "panel_admin": true,
   "panel_icon": "mdi:calendar-today",
   "homeassistant_api": true,
   "options": {
     "ssl": true,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
-    "api_path": "https://www.etesync.com/"
+    "backups": 3
   },
   "schema": {
     "ssl": "bool",
     "certfile": "str",
     "keyfile": "str",
-    "api_path": "str"
+    "backups": "int"
   },
   "ports": {
-	"80/tcp": 8081
+	"80/tcp": 8080
 	},
   "ports_description": {
-    "80/tcp": "Web interface. Not required when using ingess."
+    "80/tcp": "EteBase server API. Required for other etebase clients to connect to."
   },
   "image": "ruimtedraak/home-assistant-addon-etebase-server-{arch}"
 }
