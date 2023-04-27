@@ -1,3 +1,7 @@
+Version 2023.04.0
+- Update base image
+- Update dpendencies
+
 Version 2023.01.0
 - Update base image
 
